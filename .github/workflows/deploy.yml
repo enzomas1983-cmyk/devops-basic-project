@@ -26,5 +26,5 @@ jobs:
           cd ~/app                         # Entra nella cartella
           git clone https://github.com/${{ github.repository }} .  # Clona la repo
           docker build -t devops-app .     # Costruisci l’immagine Docker
-          docker run -d -p 80:80 --name devops-app devops-app   # Avvia il container in background, esponendo porta 80
+          docker run -d -p 8080:80 --name devops-app devops-app   # Avvia il container in background, esponendo porta 80
 
